@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07369D1921681D6700240E4C /* FindText.rom in Resources */ = {isa = PBXBuildFile; fileRef = 07369D0121681D6700240E4C /* FindText.rom */; };
+		07369D1A21681D6700240E4C /* European.rom in Resources */ = {isa = PBXBuildFile; fileRef = 07369D0221681D6700240E4C /* European.rom */; };
+		07369D1B21681D6700240E4C /* English.edc in Resources */ = {isa = PBXBuildFile; fileRef = 07369D0421681D6700240E4C /* English.edc */; };
+		07369D3321681D8800240E4C /* AbbyyRtrSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07369D3221681D8800240E4C /* AbbyyRtrSDK.framework */; };
+		07369D3C21681E9D00240E4C /* AbbyyRtrSdk.license in Resources */ = {isa = PBXBuildFile; fileRef = 07369D3A21681E9D00240E4C /* AbbyyRtrSdk.license */; };
+		07369D3D21681E9D00240E4C /* LicenseAgreement.html in Resources */ = {isa = PBXBuildFile; fileRef = 07369D3B21681E9D00240E4C /* LicenseAgreement.html */; };
+		07369D40216828E800240E4C /* English.edc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07369D0421681D6700240E4C /* English.edc */; };
+		07369D432168294900240E4C /* FindText.rom in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07369D0121681D6700240E4C /* FindText.rom */; };
+		07369D44216829E400240E4C /* European.rom in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07369D0221681D6700240E4C /* European.rom */; };
 		43BC85B91DA31E2800FC04B0 /* RTRAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */; };
 		43BC85BB1DA31E2800FC04B0 /* RTRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */; };
 		43BC85BE1DA31E2800FC04B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC85BC1DA31E2800FC04B0 /* Main.storyboard */; };
@@ -14,35 +23,38 @@
 		43BC85CC1DA3226D00FC04B0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BC85CB1DA3226D00FC04B0 /* libc++.tbd */; };
 		43BC85D01DA326F200FC04B0 /* RTRSelectedAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85CF1DA326F200FC04B0 /* RTRSelectedAreaView.swift */; };
 		43BC85DD1DA4330200FC04B0 /* RTRHexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85DC1DA4330200FC04B0 /* RTRHexColor.swift */; };
-		43BC86211DA442D700FC04B0 /* Brazil.edc in Copy Dictionaries */ = {isa = PBXBuildFile; fileRef = 43BC85E11DA43E6B00FC04B0 /* Brazil.edc */; };
-		43BC86261DA442D700FC04B0 /* English.edc in Copy Dictionaries */ = {isa = PBXBuildFile; fileRef = 43BC85E61DA43E6B00FC04B0 /* English.edc */; };
-		43BC862A1DA442D700FC04B0 /* French.edc in Copy Dictionaries */ = {isa = PBXBuildFile; fileRef = 43BC85EA1DA43E6B00FC04B0 /* French.edc */; };
-		43BC862B1DA442D700FC04B0 /* German.edc in Copy Dictionaries */ = {isa = PBXBuildFile; fileRef = 43BC85EB1DA43E6B00FC04B0 /* German.edc */; };
-		43BC862F1DA442D700FC04B0 /* Italian.edc in Copy Dictionaries */ = {isa = PBXBuildFile; fileRef = 43BC85EF1DA43E6B00FC04B0 /* Italian.edc */; };
-		43BC86321DA442D700FC04B0 /* Polish.edc in Copy Dictionaries */ = {isa = PBXBuildFile; fileRef = 43BC85F21DA43E6B00FC04B0 /* Polish.edc */; };
-		43BC86351DA442D700FC04B0 /* Spanish.edc in Copy Dictionaries */ = {isa = PBXBuildFile; fileRef = 43BC85F51DA43E6B00FC04B0 /* Spanish.edc */; };
-		43BC863B1DA4436A00FC04B0 /* European.rom in Copy Patterns */ = {isa = PBXBuildFile; fileRef = 43BC86131DA43E9600FC04B0 /* European.rom */; };
-		43BC863C1DA4436A00FC04B0 /* FindText.rom in Copy Patterns */ = {isa = PBXBuildFile; fileRef = 43BC86141DA43E9600FC04B0 /* FindText.rom */; };
-		75CA77A71E6D808B00750492 /* AbbyyRtrSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA77A61E6D808B00750492 /* AbbyyRtrSDK.framework */; };
-		CF2C54321DD1C132006B70FB /* AbbyyRtrSdk.license in Resources */ = {isa = PBXBuildFile; fileRef = CF2C54311DD1C132006B70FB /* AbbyyRtrSdk.license */; };
 		CFF18E0B1F7101B9001A6DFF /* RTRProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF18E0A1F7101B9001A6DFF /* RTRProgressView.swift */; };
 		CFF18E0C1F713A37001A6DFF /* TextCapture.RTRProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFF18E081F710191001A6DFF /* TextCapture.RTRProgressView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		07369D3E2168280D00240E4C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Dictionaries;
+			dstSubfolderSpec = 7;
+			files = (
+				07369D40216828E800240E4C /* English.edc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07369D422168293900240E4C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Patterns;
+			dstSubfolderSpec = 7;
+			files = (
+				07369D44216829E400240E4C /* European.rom in CopyFiles */,
+				07369D432168294900240E4C /* FindText.rom in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43BC86201DA4429500FC04B0 /* Copy Dictionaries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = Dictionaries;
 			dstSubfolderSpec = 7;
 			files = (
-				43BC86211DA442D700FC04B0 /* Brazil.edc in Copy Dictionaries */,
-				43BC86261DA442D700FC04B0 /* English.edc in Copy Dictionaries */,
-				43BC862A1DA442D700FC04B0 /* French.edc in Copy Dictionaries */,
-				43BC862B1DA442D700FC04B0 /* German.edc in Copy Dictionaries */,
-				43BC862F1DA442D700FC04B0 /* Italian.edc in Copy Dictionaries */,
-				43BC86321DA442D700FC04B0 /* Polish.edc in Copy Dictionaries */,
-				43BC86351DA442D700FC04B0 /* Spanish.edc in Copy Dictionaries */,
 			);
 			name = "Copy Dictionaries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,8 +65,6 @@
 			dstPath = Patterns;
 			dstSubfolderSpec = 7;
 			files = (
-				43BC863B1DA4436A00FC04B0 /* European.rom in Copy Patterns */,
-				43BC863C1DA4436A00FC04B0 /* FindText.rom in Copy Patterns */,
 			);
 			name = "Copy Patterns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +72,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07369D0121681D6700240E4C /* FindText.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = FindText.rom; sourceTree = "<group>"; };
+		07369D0221681D6700240E4C /* European.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = European.rom; sourceTree = "<group>"; };
+		07369D0421681D6700240E4C /* English.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = English.edc; sourceTree = "<group>"; };
+		07369D3221681D8800240E4C /* AbbyyRtrSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AbbyyRtrSDK.framework; sourceTree = "<group>"; };
+		07369D3A21681E9D00240E4C /* AbbyyRtrSdk.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = AbbyyRtrSdk.license; sourceTree = "<group>"; };
+		07369D3B21681E9D00240E4C /* LicenseAgreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LicenseAgreement.html; sourceTree = "<group>"; };
 		43BC85B51DA31E2800FC04B0 /* TextCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRAppDelegate.swift; sourceTree = "<group>"; };
 		43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRViewController.swift; sourceTree = "<group>"; };
@@ -72,18 +88,6 @@
 		43BC85CF1DA326F200FC04B0 /* RTRSelectedAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTRSelectedAreaView.swift; sourceTree = "<group>"; };
 		43BC85D91DA3509E00FC04B0 /* RtrSamples-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RtrSamples-Bridging-Header.h"; sourceTree = "<group>"; };
 		43BC85DC1DA4330200FC04B0 /* RTRHexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTRHexColor.swift; sourceTree = "<group>"; };
-		43BC85E11DA43E6B00FC04B0 /* Brazil.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brazil.edc; sourceTree = "<group>"; };
-		43BC85E61DA43E6B00FC04B0 /* English.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = English.edc; sourceTree = "<group>"; };
-		43BC85EA1DA43E6B00FC04B0 /* French.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = French.edc; sourceTree = "<group>"; };
-		43BC85EB1DA43E6B00FC04B0 /* German.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = German.edc; sourceTree = "<group>"; };
-		43BC85EF1DA43E6B00FC04B0 /* Italian.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Italian.edc; sourceTree = "<group>"; };
-		43BC85F21DA43E6B00FC04B0 /* Polish.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Polish.edc; sourceTree = "<group>"; };
-		43BC85F51DA43E6B00FC04B0 /* Spanish.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spanish.edc; sourceTree = "<group>"; };
-		43BC86131DA43E9600FC04B0 /* European.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = European.rom; sourceTree = "<group>"; };
-		43BC86141DA43E9600FC04B0 /* FindText.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = FindText.rom; sourceTree = "<group>"; };
-		75CA779F1E6D7F2200750492 /* Readme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Readme.html; path = ../Readme.html; sourceTree = "<group>"; };
-		75CA77A61E6D808B00750492 /* AbbyyRtrSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AbbyyRtrSDK.framework; sourceTree = "<group>"; };
-		CF2C54311DD1C132006B70FB /* AbbyyRtrSdk.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = AbbyyRtrSdk.license; sourceTree = "<group>"; };
 		CF5693381DCB53D3006059E2 /* TextCapture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextCapture.entitlements; sourceTree = "<group>"; };
 		CFF18E081F710191001A6DFF /* TextCapture.RTRProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCapture.RTRProgressView.xib; sourceTree = "<group>"; };
 		CFF18E0A1F7101B9001A6DFF /* RTRProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRProgressView.swift; sourceTree = "<group>"; };
@@ -94,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75CA77A71E6D808B00750492 /* AbbyyRtrSDK.framework in Frameworks */,
+				07369D3321681D8800240E4C /* AbbyyRtrSDK.framework in Frameworks */,
 				43BC85CC1DA3226D00FC04B0 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,13 +106,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07369CFF21681D6700240E4C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				07369D0021681D6700240E4C /* patterns */,
+				07369D0321681D6700240E4C /* dictionaries */,
+			);
+			name = assets;
+			path = "../../Downloads/abbyy-rtr-sdk-1.0.8.26.iOS 3/assets";
+			sourceTree = "<group>";
+		};
+		07369D0021681D6700240E4C /* patterns */ = {
+			isa = PBXGroup;
+			children = (
+				07369D0121681D6700240E4C /* FindText.rom */,
+				07369D0221681D6700240E4C /* European.rom */,
+			);
+			path = patterns;
+			sourceTree = "<group>";
+		};
+		07369D0321681D6700240E4C /* dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+				07369D0421681D6700240E4C /* English.edc */,
+			);
+			path = dictionaries;
+			sourceTree = "<group>";
+		};
+		07369D3921681E9D00240E4C /* License */ = {
+			isa = PBXGroup;
+			children = (
+				07369D3A21681E9D00240E4C /* AbbyyRtrSdk.license */,
+				07369D3B21681E9D00240E4C /* LicenseAgreement.html */,
+			);
+			name = License;
+			path = "../../Downloads/abbyy-rtr-sdk-1.0.8.26.iOS 3/License";
+			sourceTree = "<group>";
+		};
 		43BC85AC1DA31E2800FC04B0 = {
 			isa = PBXGroup;
 			children = (
-				75CA779F1E6D7F2200750492 /* Readme.html */,
-				75364CBE1E6707BC00B7F51E /* assets */,
+				07369D3921681E9D00240E4C /* License */,
+				07369CFF21681D6700240E4C /* assets */,
 				75CA77A11E6D7F4800750492 /* libs */,
-				75CA77A21E6D7F4E00750492 /* License */,
 				43BC85B71DA31E2800FC04B0 /* TextCapture */,
 				43BC85B61DA31E2800FC04B0 /* Products */,
 				43BC85CA1DA3226D00FC04B0 /* Frameworks */,
@@ -149,55 +189,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		43BC85E01DA43E5600FC04B0 /* dictionaries */ = {
-			isa = PBXGroup;
-			children = (
-				43BC85E11DA43E6B00FC04B0 /* Brazil.edc */,
-				43BC85E61DA43E6B00FC04B0 /* English.edc */,
-				43BC85EA1DA43E6B00FC04B0 /* French.edc */,
-				43BC85EB1DA43E6B00FC04B0 /* German.edc */,
-				43BC85EF1DA43E6B00FC04B0 /* Italian.edc */,
-				43BC85F21DA43E6B00FC04B0 /* Polish.edc */,
-				43BC85F51DA43E6B00FC04B0 /* Spanish.edc */,
-			);
-			path = dictionaries;
-			sourceTree = "<group>";
-		};
-		43BC86111DA43E8A00FC04B0 /* patterns */ = {
-			isa = PBXGroup;
-			children = (
-				43BC86131DA43E9600FC04B0 /* European.rom */,
-				43BC86141DA43E9600FC04B0 /* FindText.rom */,
-			);
-			path = patterns;
-			sourceTree = "<group>";
-		};
-		75364CBE1E6707BC00B7F51E /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				43BC85E01DA43E5600FC04B0 /* dictionaries */,
-				43BC86111DA43E8A00FC04B0 /* patterns */,
-			);
-			name = assets;
-			path = ../assets;
-			sourceTree = "<group>";
-		};
 		75CA77A11E6D7F4800750492 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				75CA77A61E6D808B00750492 /* AbbyyRtrSDK.framework */,
+				07369D3221681D8800240E4C /* AbbyyRtrSDK.framework */,
 			);
 			name = libs;
 			path = ../libs;
-			sourceTree = "<group>";
-		};
-		75CA77A21E6D7F4E00750492 /* License */ = {
-			isa = PBXGroup;
-			children = (
-				CF2C54311DD1C132006B70FB /* AbbyyRtrSdk.license */,
-			);
-			name = License;
-			path = ../License;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +211,8 @@
 				43BC86201DA4429500FC04B0 /* Copy Dictionaries */,
 				43BC86391DA4434D00FC04B0 /* Copy Patterns */,
 				CF220F941F7D475600E24FBC /* Copy Extended Version Files */,
+				07369D3E2168280D00240E4C /* CopyFiles */,
+				07369D422168293900240E4C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -235,7 +235,8 @@
 				TargetAttributes = {
 					43BC85B41DA31E2800FC04B0 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 4LA8TGHNZ7;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -268,8 +269,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF18E0C1F713A37001A6DFF /* TextCapture.RTRProgressView.xib in Resources */,
-				CF2C54321DD1C132006B70FB /* AbbyyRtrSdk.license in Resources */,
+				07369D3C21681E9D00240E4C /* AbbyyRtrSdk.license in Resources */,
 				43BC85C01DA31E2800FC04B0 /* Assets.xcassets in Resources */,
+				07369D1B21681D6700240E4C /* English.edc in Resources */,
+				07369D3D21681E9D00240E4C /* LicenseAgreement.html in Resources */,
+				07369D1A21681D6700240E4C /* European.rom in Resources */,
+				07369D1921681D6700240E4C /* FindText.rom in Resources */,
 				43BC85BE1DA31E2800FC04B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +433,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TextCapture/TextCapture.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 4LA8TGHNZ7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../libs,
@@ -436,8 +444,10 @@
 				INFOPLIST_FILE = TextCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abbyy.rtr.sample-textcapture";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nbcuni.ocr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TextCapture/RtrSamples-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
@@ -448,7 +458,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TextCapture/TextCapture.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 4LA8TGHNZ7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../libs,
@@ -456,8 +469,10 @@
 				INFOPLIST_FILE = TextCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abbyy.rtr.sample-textcapture";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nbcuni.ocr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TextCapture/RtrSamples-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};

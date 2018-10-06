@@ -14,8 +14,6 @@
 		43BC85D01DA326F200FC04B0 /* RTRSelectedAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85CF1DA326F200FC04B0 /* RTRSelectedAreaView.swift */; };
 		43BC85DD1DA4330200FC04B0 /* RTRHexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85DC1DA4330200FC04B0 /* RTRHexColor.swift */; };
 		67AC53712168FCF500690727 /* LicenseAgreement.html in Resources */ = {isa = PBXBuildFile; fileRef = 67AC53702168FCF400690727 /* LicenseAgreement.html */; };
-		67AC53742168FD0D00690727 /* dictionaries in Resources */ = {isa = PBXBuildFile; fileRef = 67AC53722168FD0D00690727 /* dictionaries */; };
-		67AC53752168FD0D00690727 /* patterns in Resources */ = {isa = PBXBuildFile; fileRef = 67AC53732168FD0D00690727 /* patterns */; };
 		67AC53772168FD1E00690727 /* AbbyyRtrSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AC53762168FD1E00690727 /* AbbyyRtrSDK.framework */; };
 		67AC537B216920C900690727 /* LinkDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AC5378216920C800690727 /* LinkDeviceViewController.swift */; };
 		67AC537C216920C900690727 /* CodeConfirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AC5379216920C800690727 /* CodeConfirmation.storyboard */; };
@@ -265,10 +263,8 @@
 			files = (
 				CFF18E0C1F713A37001A6DFF /* TextCapture.RTRProgressView.xib in Resources */,
 				67AC537C216920C900690727 /* CodeConfirmation.storyboard in Resources */,
-				67AC53752168FD0D00690727 /* patterns in Resources */,
 				67AC537F2169215400690727 /* Main.storyboard in Resources */,
 				43BC85C01DA31E2800FC04B0 /* Assets.xcassets in Resources */,
-				67AC53742168FD0D00690727 /* dictionaries in Resources */,
 				67AC53712168FCF500690727 /* LicenseAgreement.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

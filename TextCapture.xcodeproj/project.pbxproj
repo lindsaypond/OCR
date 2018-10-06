@@ -21,6 +21,9 @@
 		67AC537C216920C900690727 /* CodeConfirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AC5379216920C800690727 /* CodeConfirmation.storyboard */; };
 		67AC537D216920C900690727 /* CodeConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AC537A216920C900690727 /* CodeConfirmationViewController.swift */; };
 		67AC537F2169215400690727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AC537E2169215400690727 /* Main.storyboard */; };
+		67AC538121692D2200690727 /* English.edc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67AC538021692D2100690727 /* English.edc */; };
+		67AC538321692D2D00690727 /* FindText.rom in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67AC538221692D2D00690727 /* FindText.rom */; };
+		67AC538521692D3400690727 /* European.rom in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67AC538421692D3300690727 /* European.rom */; };
 		CFF18E0B1F7101B9001A6DFF /* RTRProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF18E0A1F7101B9001A6DFF /* RTRProgressView.swift */; };
 		CFF18E0C1F713A37001A6DFF /* TextCapture.RTRProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFF18E081F710191001A6DFF /* TextCapture.RTRProgressView.xib */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,7 @@
 			dstPath = Dictionaries;
 			dstSubfolderSpec = 7;
 			files = (
+				67AC538121692D2200690727 /* English.edc in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +45,8 @@
 			dstPath = Patterns;
 			dstSubfolderSpec = 7;
 			files = (
+				67AC538321692D2D00690727 /* FindText.rom in CopyFiles */,
+				67AC538521692D3400690727 /* European.rom in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,9 @@
 		67AC5379216920C800690727 /* CodeConfirmation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CodeConfirmation.storyboard; sourceTree = "<group>"; };
 		67AC537A216920C900690727 /* CodeConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeConfirmationViewController.swift; sourceTree = "<group>"; };
 		67AC537E2169215400690727 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		67AC538021692D2100690727 /* English.edc */ = {isa = PBXFileReference; lastKnownFileType = file; path = English.edc; sourceTree = "<group>"; };
+		67AC538221692D2D00690727 /* FindText.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = FindText.rom; sourceTree = "<group>"; };
+		67AC538421692D3300690727 /* European.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = European.rom; sourceTree = "<group>"; };
 		CF5693381DCB53D3006059E2 /* TextCapture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextCapture.entitlements; sourceTree = "<group>"; };
 		CFF18E081F710191001A6DFF /* TextCapture.RTRProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCapture.RTRProgressView.xib; sourceTree = "<group>"; };
 		CFF18E0A1F7101B9001A6DFF /* RTRProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRProgressView.swift; sourceTree = "<group>"; };
@@ -126,6 +135,9 @@
 		43BC85AC1DA31E2800FC04B0 = {
 			isa = PBXGroup;
 			children = (
+				67AC538421692D3300690727 /* European.rom */,
+				67AC538221692D2D00690727 /* FindText.rom */,
+				67AC538021692D2100690727 /* English.edc */,
 				07369D3921681E9D00240E4C /* License */,
 				07369CFF21681D6700240E4C /* assets */,
 				75CA77A11E6D7F4800750492 /* libs */,

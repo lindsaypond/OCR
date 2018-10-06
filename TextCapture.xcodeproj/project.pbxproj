@@ -71,7 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		43BC85B51DA31E2800FC04B0 /* TextCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BC85B51DA31E2800FC04B0 /* NBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRAppDelegate.swift; sourceTree = "<group>"; };
 		43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRViewController.swift; sourceTree = "<group>"; };
 		43BC85BF1DA31E2800FC04B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		43BC85B61DA31E2800FC04B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43BC85B51DA31E2800FC04B0 /* TextCapture.app */,
+				43BC85B51DA31E2800FC04B0 /* NBC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,9 +194,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43BC85B41DA31E2800FC04B0 /* TextCapture */ = {
+		43BC85B41DA31E2800FC04B0 /* NBC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43BC85C71DA31E2800FC04B0 /* Build configuration list for PBXNativeTarget "TextCapture" */;
+			buildConfigurationList = 43BC85C71DA31E2800FC04B0 /* Build configuration list for PBXNativeTarget "NBC" */;
 			buildPhases = (
 				43BC85B11DA31E2800FC04B0 /* Sources */,
 				43BC85B21DA31E2800FC04B0 /* Frameworks */,
@@ -211,9 +211,9 @@
 			);
 			dependencies = (
 			);
-			name = TextCapture;
+			name = NBC;
 			productName = TextCapture;
-			productReference = 43BC85B51DA31E2800FC04B0 /* TextCapture.app */;
+			productReference = 43BC85B51DA31E2800FC04B0 /* NBC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43BC85B41DA31E2800FC04B0 /* TextCapture */,
+				43BC85B41DA31E2800FC04B0 /* NBC */,
 			);
 		};
 /* End PBXProject section */
@@ -471,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43BC85C71DA31E2800FC04B0 /* Build configuration list for PBXNativeTarget "TextCapture" */ = {
+		43BC85C71DA31E2800FC04B0 /* Build configuration list for PBXNativeTarget "NBC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43BC85C81DA31E2800FC04B0 /* Debug */,

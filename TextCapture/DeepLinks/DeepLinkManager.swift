@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class DeepLinkManager {
     fileprivate init() {}
     private var deeplinkType: DeeplinkType?
@@ -21,6 +20,12 @@ class DeepLinkManager {
     DeeplinkNavigator.shared.proceedToDeeplink(deeplinkType)
         
         self.deeplinkType = nil
+    }
+    
+    @discardableResult
+    func handleDeeplink(url: URL) -> Bool {
+        deeplinkType = DeeplinkParser.shared.parseDeepLink(url)
+        return deeplinkType != nil
     }
 }
 
@@ -51,9 +56,9 @@ class DeeplinkParser {
         pathComponents.removeFirst()
         //
         if let code = pathComponents.first {
-            return .activateWith(code: code)
+            return DeepLinkType.activateWith(code: code)
         } else {
-            return .activateWithScan
+            return DeepLinkType.activateWithScan
         }
         return nil
     }

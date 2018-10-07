@@ -7,5 +7,10 @@ import UIKit
 class RTRAppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
+    var deepLinkManager = DeepLinkManager()
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        deepLinkManager.checkDeepLink()
+        
+    }
 }

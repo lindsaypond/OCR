@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43AF036921697D6100F463CA /* DeepLinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF036821697D6100F463CA /* DeepLinkType.swift */; };
+		43AF036B21697DBF00F463CA /* DeepLinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF036A21697DBF00F463CA /* DeepLinkManager.swift */; };
 		43BC85B91DA31E2800FC04B0 /* RTRAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */; };
 		43BC85BB1DA31E2800FC04B0 /* RTRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */; };
 		43BC85C01DA31E2800FC04B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC85BF1DA31E2800FC04B0 /* Assets.xcassets */; };
@@ -71,6 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		43AF036821697D6100F463CA /* DeepLinkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkType.swift; sourceTree = "<group>"; };
+		43AF036A21697DBF00F463CA /* DeepLinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkManager.swift; sourceTree = "<group>"; };
 		43BC85B51DA31E2800FC04B0 /* NBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRAppDelegate.swift; sourceTree = "<group>"; };
 		43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,15 @@
 			path = "../../Downloads/abbyy-rtr-sdk-1.0.8.26.iOS 3/License";
 			sourceTree = "<group>";
 		};
+		43AF036721697D3B00F463CA /* DeepLinks */ = {
+			isa = PBXGroup;
+			children = (
+				43AF036821697D6100F463CA /* DeepLinkType.swift */,
+				43AF036A21697DBF00F463CA /* DeepLinkManager.swift */,
+			);
+			path = DeepLinks;
+			sourceTree = "<group>";
+		};
 		43BC85AC1DA31E2800FC04B0 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +169,7 @@
 		43BC85B71DA31E2800FC04B0 /* TextCapture */ = {
 			isa = PBXGroup;
 			children = (
+				43AF036721697D3B00F463CA /* DeepLinks */,
 				67AC5379216920C800690727 /* CodeConfirmation.storyboard */,
 				67AC537A216920C900690727 /* CodeConfirmationViewController.swift */,
 				67AC5378216920C800690727 /* LinkDeviceViewController.swift */,
@@ -296,7 +310,9 @@
 				67AC537B216920C900690727 /* LinkDeviceViewController.swift in Sources */,
 				CFF18E0B1F7101B9001A6DFF /* RTRProgressView.swift in Sources */,
 				43BC85DD1DA4330200FC04B0 /* RTRHexColor.swift in Sources */,
+				43AF036921697D6100F463CA /* DeepLinkType.swift in Sources */,
 				43BC85BB1DA31E2800FC04B0 /* RTRViewController.swift in Sources */,
+				43AF036B21697DBF00F463CA /* DeepLinkManager.swift in Sources */,
 				43BC85D01DA326F200FC04B0 /* RTRSelectedAreaView.swift in Sources */,
 				43BC85B91DA31E2800FC04B0 /* RTRAppDelegate.swift in Sources */,
 				67AC537D216920C900690727 /* CodeConfirmationViewController.swift in Sources */,

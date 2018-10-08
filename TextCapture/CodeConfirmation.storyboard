@@ -13,7 +13,7 @@
         <!--Code Confirmation View Controller-->
         <scene sceneID="3a1-BL-gZZ">
             <objects>
-                <viewController id="4UP-ux-mVj" customClass="CodeConfirmationViewController" customModule="TextCapture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4UP-ux-mVj" customClass="CodeConfirmationViewController" customModule="NBC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FTb-Wm-wgx"/>
                         <viewControllerLayoutGuide type="bottom" id="PKt-Qe-yfz"/>
@@ -119,6 +119,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="YRW-TZ-eGp" id="vvE-qI-rmn"/>
+                        <outlet property="codeLabel" destination="hgb-Sc-5bu" id="vqj-zl-6aq"/>
                         <outlet property="continueButton" destination="sZI-Pp-f8J" id="mjw-YE-nk6"/>
                         <outlet property="manualButton" destination="cnD-Ki-e6E" id="rJv-aL-n9L"/>
                         <outlet property="scanAgainButton" destination="j90-By-Al1" id="tZS-jr-6Hi"/>

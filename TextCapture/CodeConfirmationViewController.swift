@@ -15,16 +15,25 @@ class CodeConfirmationViewController: UIViewController {
     @IBOutlet weak var manualButton: UIButton!
     @IBOutlet var backgroundView: UIView!
     
+    @IBOutlet var codeLabel: UILabel!
+    var code: String?
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         setGradientBackground()
         setButtonColors()
-        
     }
     
-    static func viewController() -> UINavigationController? {
-        return UIStoryboard(name: "CodeConfirmation", bundle: Bundle.main).instantiateInitialViewController() as? UINavigationController
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let code = code {
+            let formattedCode = String(code.enumerated().map { [" ", $1]}.joined())
+            
+            codeLabel.text = formattedCode
+        }
+    }
+    static func viewController() -> CodeConfirmationViewController? {
+        return UIStoryboard(name: "CodeConfirmation", bundle: Bundle.main).instantiateInitialViewController() as? CodeConfirmationViewController
     }
     
     func setGradientBackground() {

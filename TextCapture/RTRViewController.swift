@@ -194,7 +194,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		self.recognizeLanguageButton.isEnabled = true
 		self.textCaptureService = self.engine?.createTextCaptureService(with: self)
         
-        self.dataCaptureService = self.engine?.createDataCaptureService(with: self as! RTRDataCaptureServiceDelegate, profile: "[0-9]{2,}")
+//        self.dataCaptureService = self.engine?.createDataCaptureService(with: self as! RTRDataCaptureServiceDelegate, profile: "[0-9]{2,}")
         self.textCaptureService?.setRecognitionLanguages(selectedRecognitionLanguages)
 		
 		self.configureAVCaptureSession()
@@ -260,7 +260,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 			connection.videoOrientation = self.videoOrientation(orientation)
 			let viewBounds = self.view.bounds
 			self.previewLayer?.frame = viewBounds
-			self.selectedArea = viewBounds.insetBy(dx: viewBounds.width/8.0, dy: viewBounds.height/3.0)
+			self.selectedArea = viewBounds.insetBy(dx: viewBounds.width/20.0, dy: viewBounds.height/2.3)
 			
 			self.updateAreaOfInterest()
 		}

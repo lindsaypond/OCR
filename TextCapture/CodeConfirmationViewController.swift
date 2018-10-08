@@ -14,12 +14,13 @@ class CodeConfirmationViewController: UIViewController {
     @IBOutlet weak var scanAgainButton: UIButton!
     @IBOutlet weak var manualButton: UIButton!
     @IBOutlet var backgroundView: UIView!
+    @IBOutlet weak var closeButton: UIBarButtonItem!
     
     @IBOutlet var codeLabel: UILabel!
     var code: String?
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        setNavigationBarStyle()
         setGradientBackground()
         setButtonColors()
     }
@@ -51,5 +52,16 @@ class CodeConfirmationViewController: UIViewController {
         continueButton.backgroundColor = UIColor(red:0.00, green:0.70, blue:0.92, alpha:1.0)
         scanAgainButton.backgroundColor = UIColor(red:0.00, green:0.70, blue:0.92, alpha:1.0)
         manualButton.backgroundColor = UIColor(red:0.00, green:0.70, blue:0.92, alpha:1.0)
+    }
+    
+    func setNavigationBarStyle() {
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+    }
+    
+    @IBAction func closeButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
 }

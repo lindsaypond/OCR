@@ -38,6 +38,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 	private var engine: RTREngine?
 	/// Service for runtime recognition.
 	private var textCaptureService: RTRTextCaptureService?
+    private var dataCaptureService: RTRDataCaptureService?
 	/// Selected recognition languages.
 	/// Default recognition language.
 	private var selectedRecognitionLanguages = Set(["English"])
@@ -128,6 +129,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		let wasRunning = self.isRunning
 		self.isRunning = false
 		self.textCaptureService?.stopTasks()
+        self.dataCaptureService?.stopTasks()
 		self.clearScreenFromRegions()
 		
 		coordinator.animate(alongsideTransition: nil) { (context) in
@@ -148,7 +150,8 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		self.isRunning = false
 		self.captureButton.isSelected = false
 		self.textCaptureService?.stopTasks()
-
+        self.dataCaptureService?.stopTasks()
+        
 		super.viewWillDisappear(animated)
 	}
 
@@ -190,7 +193,9 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		
 		self.recognizeLanguageButton.isEnabled = true
 		self.textCaptureService = self.engine?.createTextCaptureService(with: self)
-		self.textCaptureService?.setRecognitionLanguages(selectedRecognitionLanguages)
+        
+//        self.dataCaptureService = self.engine?.createDataCaptureService(with: self as! RTRDataCaptureServiceDelegate, profile: "[0-9]{2,}")
+        self.textCaptureService?.setRecognitionLanguages(selectedRecognitionLanguages)
 		
 		self.configureAVCaptureSession()
 		self.configurePreviewLayer()
@@ -255,7 +260,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 			connection.videoOrientation = self.videoOrientation(orientation)
 			let viewBounds = self.view.bounds
 			self.previewLayer?.frame = viewBounds
-			self.selectedArea = viewBounds.insetBy(dx: viewBounds.width/8.0, dy: viewBounds.height/3.0)
+			self.selectedArea = viewBounds.insetBy(dx: viewBounds.width/20.0, dy: viewBounds.height/2.3)
 			
 			self.updateAreaOfInterest()
 		}
@@ -267,6 +272,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		let affineTransform = CGAffineTransform(scaleX: self.ImageBufferSize.width * 1.0 / self.overlayView.frame.width, y: self.ImageBufferSize.height * 1.0 / self.overlayView.frame.height)
 		let selectedRect = self.selectedArea.applying(affineTransform)
 		self.textCaptureService?.setAreaOfInterest(selectedRect)
+        self.dataCaptureService?.setAreaOfInterest(selectedRect)
 	}
 
 	private func videoOrientation(_ orientation: UIInterfaceOrientation) -> AVCaptureVideoOrientation
@@ -532,6 +538,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 		self.clearScreenFromRegions()
 		self.whiteBackgroundView.isHidden = true
 		self.textCaptureService?.stopTasks()
+        self.dataCaptureService?.stopTasks()
 		self.captureButton.isSelected = true
 		self.isRunning = false
 	}
@@ -571,6 +578,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 			self.session?.startRunning()
 		} else {
 			self.textCaptureService?.stopTasks()
+            self.dataCaptureService?.stopTasks()
 		}
 	}
 	
@@ -601,11 +609,31 @@ extension RTRViewController: AVCaptureVideoDataOutputSampleBufferDelegate
 		connection.videoOrientation = self.videoOrientation(orientation)
 		
 		self.textCaptureService?.add(sampleBuffer)
+        self.dataCaptureService?.add(sampleBuffer)
 	}
 }
 
-extension RTRViewController: RTRTextCaptureServiceDelegate
+extension RTRViewController: RTRTextCaptureServiceDelegate, RTRDataCaptureServiceDelegate
 {
+    func onBufferProcessed(with dataScheme: RTRDataScheme!, dataFields: [RTRDataField]!, resultStatus: RTRResultStabilityStatus) {
+        self.performBlockOnMainThread(0) {
+            if !self.isRunning {
+                return
+            }
+            
+            self.progressIndicatorView!.setProgress(resultStatus.rawValue, self.progressColor(resultStatus))
+            
+            if resultStatus == RTRResultStabilityStatus.stable {
+                self.isRunning = false
+                self.captureButton.isSelected = false
+                self.whiteBackgroundView.isHidden = false
+                self.dataCaptureService?.stopTasks()
+            }
+            
+//            self.drawTextLines(dataFields., resultStatus)
+        }
+    }
+    
 	func onBufferProcessed(with textLines: [RTRTextLine]!, resultStatus: RTRResultStabilityStatus)
 	{
 		self.performBlockOnMainThread(0) { 

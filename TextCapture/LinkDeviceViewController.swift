@@ -16,11 +16,12 @@ class LinkDeviceViewController : UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setGradientBackground()
-
+        setNavigationBarStyle()
         linkDeviceButton.backgroundColor = UIColor(red:0.00, green:0.70, blue:0.92, alpha:1.0)
-        
+    }
+    
+    func setNavigationBarStyle() {
         navigationController?.navigationBar.isTranslucent = true
-        
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
     }
@@ -35,6 +36,4 @@ class LinkDeviceViewController : UIViewController {
         
         self.backgroundView.layer.insertSublayer(gradientLayer, at: 0)
     }
-    
-    
 }
